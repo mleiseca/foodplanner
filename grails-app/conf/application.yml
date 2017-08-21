@@ -9,7 +9,7 @@ grails:
     gorm:
         # Whether to autowire entities. 
         # Disabled by default for performance reasons.
-        autowire: false         
+        autowire: true
         reactor:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
@@ -87,3 +87,21 @@ grails:
 endpoints:
     jmx:
         unique-names: true
+
+datasource:
+    pooled: true
+    username: "foodplanner"
+    password: ""
+    url: jdbc:postgresql://localhost:5432/foodplanner_dev
+    driverClassName: org.postgresql.Driver
+    dialect: org.hibernate.dialect.PostgresDBDialect
+    dbCreate: update
+
+
+hibernate:
+    dialect: net.kaleidos.hibernate.PostgresqlExtensionsDialect
+    cache:
+        queries: false
+        use_second_level_cache: true
+        use_query_cache: false
+        region.factory_class: org.hibernate.cache.ehcache.EhCacheRegionFactory
