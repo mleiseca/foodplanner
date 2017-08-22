@@ -14,6 +14,10 @@ grails:
             # Whether to translate GORM events into Reactor events
             # Disabled by default for performance reasons
             events: false
+    plugin:
+        databasemigration:
+            updateOnStart: true
+
 info:
     app:
         name: '@info.app.name@'
@@ -88,14 +92,13 @@ endpoints:
     jmx:
         unique-names: true
 
-datasource:
+dataSource:
     pooled: true
     username: "foodplanner"
     password: ""
     url: jdbc:postgresql://localhost:5432/foodplanner_dev
     driverClassName: org.postgresql.Driver
     dialect: org.hibernate.dialect.PostgresDBDialect
-    dbCreate: update
 
 
 hibernate:
