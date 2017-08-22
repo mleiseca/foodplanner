@@ -1,11 +1,11 @@
 databaseChangeLog = {
 
     changeSet(author: "mleiseca (generated)", id: "1503363681549-1") {
-        createSequence(sequenceName: "Role_SEQ")
+        createSequence(sequenceName: "role_seq")
     }
 
     changeSet(author: "mleiseca (generated)", id: "1503363681549-2") {
-        createSequence(sequenceName: "User_SEQ")
+        createSequence(sequenceName: "user_seq")
     }
 
     changeSet(author: "mleiseca (generated)", id: "1503363681549-3") {
