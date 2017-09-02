@@ -1,5 +1,5 @@
 # connect with:
-# psql -h localhost -p 5432 -U foodplanner -d foodplanner_dev
+# psql -h localhost -p 5433 -U foodplanner -d foodplanner_dev
 
 from postgres:9.6
 

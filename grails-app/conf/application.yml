@@ -96,7 +96,7 @@ dataSource:
     pooled: true
     username: "foodplanner"
     password: ""
-    url: jdbc:postgresql://localhost:5432/foodplanner_dev
+    url: jdbc:postgresql://localhost:5433/foodplanner_dev
     driverClassName: org.postgresql.Driver
     dialect: org.hibernate.dialect.PostgresDBDialect
 
